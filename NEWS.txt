@@ -1,5 +1,12 @@
-﻿Changes between 2.2.1 and 2.2.2:
+Changes between 2.2.1 and 2.2.2:
 --------------------------------
+
+Access:
+ * Fix SetupFormat for continuous framesize in v4l2
+ * Fix off-by-one buffer overflow in RealRtsp module
+ * Fix screen recording aspect-ratio, framerate and potential crash
+ * Fix Windows directshow input freeze
+ * Fix MMS segmentation fault/abort when server forces a large allocation
 
 Demux:
  * Fix support for ms-dvr files
@@ -8,12 +15,7 @@ Demux:
  * Fix mp4 NULL dereference reported by by Fortinet's FortiGuard Labs
  * Fix regression for VC-1 in WMV
  * Fix MXF crashes on stop
- * Fix EAC3 detection in some TS filesAccess:
- * Fix SetupFormat for continuous framesize in v4l2
- * Fix off-by-one buffer overflow in RealRtsp module
- * Fix screen recording aspect-ratio, framerate and potential crash
- * Fix Windows directshow input freeze
- * Fix MMS segmentation fault/abort when server forces a large allocation
+ * Fix EAC3 detection in some TS files
 
 Decoders:
  * Fix importing surface from main memory in VDPAU
